@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SendFmtMail" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="on8-3t-8H1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0PV-sM-HNF" userLabel="TopView">
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="送信日:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T9q-OQ-e7C">
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="To:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9cH-Vv-RZ8">
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Cc:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YvB-QI-men">
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="件名:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GPd-Pf-YLX">
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="添付:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Iu-qP-ibT">
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="selectPhoto:" destination="BYZ-38-t0r" eventType="touchDown" id="Cad-DQ-8ah"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="挿入文:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aF5-hj-9OC">
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="9cH-Vv-RZ8" firstAttribute="width" secondItem="0PV-sM-HNF" secondAttribute="width" id="5r7-PL-kTD"/>
+                                    <constraint firstItem="aF5-hj-9OC" firstAttribute="width" secondItem="0PV-sM-HNF" secondAttribute="width" id="A1P-BF-3bd"/>
+                                    <constraint firstItem="6Iu-qP-ibT" firstAttribute="centerX" secondItem="0PV-sM-HNF" secondAttribute="centerX" id="BZj-F9-Wr4"/>
+                                    <constraint firstItem="aF5-hj-9OC" firstAttribute="centerX" secondItem="0PV-sM-HNF" secondAttribute="centerX" id="Q19-S4-L2k"/>
+                                    <constraint firstItem="6Iu-qP-ibT" firstAttribute="width" secondItem="0PV-sM-HNF" secondAttribute="width" id="Q53-5A-DRZ"/>
+                                    <constraint firstItem="GPd-Pf-YLX" firstAttribute="centerX" secondItem="0PV-sM-HNF" secondAttribute="centerX" id="SpT-kn-bI2"/>
+                                    <constraint firstItem="T9q-OQ-e7C" firstAttribute="centerX" secondItem="0PV-sM-HNF" secondAttribute="centerX" id="Udk-AN-YJN"/>
+                                    <constraint firstItem="T9q-OQ-e7C" firstAttribute="bottom" secondItem="9cH-Vv-RZ8" secondAttribute="top" id="WIW-JG-TRf"/>
+                                    <constraint firstItem="YvB-QI-men" firstAttribute="bottom" secondItem="GPd-Pf-YLX" secondAttribute="top" id="XWE-Xd-mNi"/>
+                                    <constraint firstItem="YvB-QI-men" firstAttribute="width" secondItem="0PV-sM-HNF" secondAttribute="width" id="ZJS-yR-F7r"/>
+                                    <constraint firstItem="GPd-Pf-YLX" firstAttribute="bottom" secondItem="6Iu-qP-ibT" secondAttribute="top" id="cCB-zb-iRE"/>
+                                    <constraint firstItem="GPd-Pf-YLX" firstAttribute="width" secondItem="0PV-sM-HNF" secondAttribute="width" id="cFP-lK-Kfx"/>
+                                    <constraint firstItem="T9q-OQ-e7C" firstAttribute="top" secondItem="0PV-sM-HNF" secondAttribute="topMargin" id="cRT-l2-mqr"/>
+                                    <constraint firstItem="9cH-Vv-RZ8" firstAttribute="centerX" secondItem="0PV-sM-HNF" secondAttribute="centerX" id="eD8-EK-LM0"/>
+                                    <constraint firstItem="9cH-Vv-RZ8" firstAttribute="bottom" secondItem="YvB-QI-men" secondAttribute="top" id="fdi-Pf-60p"/>
+                                    <constraint firstItem="YvB-QI-men" firstAttribute="centerX" secondItem="0PV-sM-HNF" secondAttribute="centerX" id="j4q-La-gOn"/>
+                                    <constraint firstItem="6Iu-qP-ibT" firstAttribute="bottom" secondItem="aF5-hj-9OC" secondAttribute="top" id="kO4-0Z-YAK"/>
+                                    <constraint firstItem="T9q-OQ-e7C" firstAttribute="width" secondItem="0PV-sM-HNF" secondAttribute="width" id="raQ-CS-dm1"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="T9q-OQ-e7C"/>
+                                        <exclude reference="9cH-Vv-RZ8"/>
+                                        <exclude reference="YvB-QI-men"/>
+                                        <exclude reference="GPd-Pf-YLX"/>
+                                        <exclude reference="6Iu-qP-ibT"/>
+                                        <exclude reference="aF5-hj-9OC"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <exclude reference="Q19-S4-L2k"/>
+                                        <exclude reference="A1P-BF-3bd"/>
+                                        <exclude reference="XWE-Xd-mNi"/>
+                                        <exclude reference="ZJS-yR-F7r"/>
+                                        <exclude reference="j4q-La-gOn"/>
+                                        <exclude reference="cFP-lK-Kfx"/>
+                                        <exclude reference="SpT-kn-bI2"/>
+                                        <exclude reference="cCB-zb-iRE"/>
+                                        <exclude reference="Udk-AN-YJN"/>
+                                        <exclude reference="WIW-JG-TRf"/>
+                                        <exclude reference="raQ-CS-dm1"/>
+                                        <exclude reference="cRT-l2-mqr"/>
+                                        <exclude reference="Q53-5A-DRZ"/>
+                                        <exclude reference="kO4-0Z-YAK"/>
+                                        <exclude reference="BZj-F9-Wr4"/>
+                                        <exclude reference="eD8-EK-LM0"/>
+                                        <exclude reference="5r7-PL-kTD"/>
+                                        <exclude reference="fdi-Pf-60p"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="subviews">
+                                        <include reference="T9q-OQ-e7C"/>
+                                        <include reference="9cH-Vv-RZ8"/>
+                                        <include reference="YvB-QI-men"/>
+                                        <include reference="GPd-Pf-YLX"/>
+                                        <include reference="6Iu-qP-ibT"/>
+                                        <include reference="aF5-hj-9OC"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <include reference="Q19-S4-L2k"/>
+                                        <include reference="A1P-BF-3bd"/>
+                                        <include reference="XWE-Xd-mNi"/>
+                                        <include reference="ZJS-yR-F7r"/>
+                                        <include reference="j4q-La-gOn"/>
+                                        <include reference="cFP-lK-Kfx"/>
+                                        <include reference="SpT-kn-bI2"/>
+                                        <include reference="cCB-zb-iRE"/>
+                                        <include reference="Udk-AN-YJN"/>
+                                        <include reference="WIW-JG-TRf"/>
+                                        <include reference="raQ-CS-dm1"/>
+                                        <include reference="cRT-l2-mqr"/>
+                                        <include reference="Q53-5A-DRZ"/>
+                                        <include reference="kO4-0Z-YAK"/>
+                                        <include reference="BZj-F9-Wr4"/>
+                                        <include reference="eD8-EK-LM0"/>
+                                        <include reference="5r7-PL-kTD"/>
+                                        <include reference="fdi-Pf-60p"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="interactive" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zJc-cq-oqD">
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES"/>
+                                </accessibility>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PO7-qn-rp1" userLabel="BtmToolbar">
+                                <items>
+                                    <barButtonItem width="28" style="plain" systemItem="fixedSpace" id="uZL-eT-gsM"/>
+                                    <barButtonItem tag="1" systemItem="save" id="SOr-v0-qXm">
+                                        <connections>
+                                            <action selector="saveBtm:" destination="BYZ-38-t0r" id="4A7-xZ-YZl"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="aG3-Gj-Mpi"/>
+                                    <barButtonItem tag="2" systemItem="action" id="Wjf-Im-YXo">
+                                        <connections>
+                                            <action selector="startMailerBtm:" destination="BYZ-38-t0r" id="W6u-XX-Uhw"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="24" style="plain" systemItem="fixedSpace" id="bpW-HD-0Pc"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zJc-cq-oqD" firstAttribute="centerX" secondItem="on8-3t-8H1" secondAttribute="centerX" id="1B0-3T-wdb"/>
+                            <constraint firstItem="zJc-cq-oqD" firstAttribute="bottom" secondItem="PO7-qn-rp1" secondAttribute="top" id="6a6-Co-LpG"/>
+                            <constraint firstItem="0PV-sM-HNF" firstAttribute="centerX" secondItem="on8-3t-8H1" secondAttribute="centerX" id="AZd-hk-mbY"/>
+                            <constraint firstItem="0PV-sM-HNF" firstAttribute="width" secondItem="on8-3t-8H1" secondAttribute="width" id="BwJ-Th-eyn"/>
+                            <constraint firstItem="0PV-sM-HNF" firstAttribute="bottom" secondItem="zJc-cq-oqD" secondAttribute="top" id="XXJ-2f-0Uk">
+                                <variation key="widthClass=compact" constant="29"/>
+                            </constraint>
+                            <constraint firstItem="zJc-cq-oqD" firstAttribute="width" secondItem="on8-3t-8H1" secondAttribute="width" id="luD-hQ-5hn"/>
+                            <constraint firstItem="0PV-sM-HNF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="pDI-hl-QrO"/>
+                            <constraint firstItem="zJc-cq-oqD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="194" id="pdd-HJ-qrB"/>
+                            <constraint firstItem="PO7-qn-rp1" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="pu1-oW-i9e"/>
+                            <constraint firstItem="PO7-qn-rp1" firstAttribute="centerX" secondItem="on8-3t-8H1" secondAttribute="centerX" id="vup-G7-a1z"/>
+                            <constraint firstItem="PO7-qn-rp1" firstAttribute="width" secondItem="on8-3t-8H1" secondAttribute="width" id="xvr-Kh-UTy"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="0PV-sM-HNF"/>
+                                <exclude reference="zJc-cq-oqD"/>
+                                <exclude reference="PO7-qn-rp1"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="AZd-hk-mbY"/>
+                                <exclude reference="BwJ-Th-eyn"/>
+                                <exclude reference="XXJ-2f-0Uk"/>
+                                <exclude reference="1B0-3T-wdb"/>
+                                <exclude reference="6a6-Co-LpG"/>
+                                <exclude reference="luD-hQ-5hn"/>
+                                <exclude reference="vup-G7-a1z"/>
+                                <exclude reference="xvr-Kh-UTy"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="0PV-sM-HNF"/>
+                                <include reference="zJc-cq-oqD"/>
+                                <include reference="PO7-qn-rp1"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="AZd-hk-mbY"/>
+                                <include reference="BwJ-Th-eyn"/>
+                                <include reference="XXJ-2f-0Uk"/>
+                                <include reference="1B0-3T-wdb"/>
+                                <include reference="6a6-Co-LpG"/>
+                                <include reference="luD-hQ-5hn"/>
+                                <include reference="vup-G7-a1z"/>
+                                <include reference="xvr-Kh-UTy"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="attachText" destination="6Iu-qP-ibT" id="5KN-8i-zMQ"/>
+                        <outlet property="ccText" destination="YvB-QI-men" id="GZJ-KI-Aei"/>
+                        <outlet property="insertStatementText" destination="aF5-hj-9OC" id="xwx-Ue-nO1"/>
+                        <outlet property="messageBodyText" destination="zJc-cq-oqD" id="peE-77-6LF"/>
+                        <outlet property="saveBtm" destination="SOr-v0-qXm" id="EIK-Sy-PMo"/>
+                        <outlet property="sendBtm" destination="Wjf-Im-YXo" id="xPX-cl-wl3"/>
+                        <outlet property="sendDateText" destination="T9q-OQ-e7C" id="3ls-cI-Tvm"/>
+                        <outlet property="subjectText" destination="GPd-Pf-YLX" id="FIb-Yd-Afv"/>
+                        <outlet property="toText" destination="9cH-Vv-RZ8" id="VMF-7f-SdB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

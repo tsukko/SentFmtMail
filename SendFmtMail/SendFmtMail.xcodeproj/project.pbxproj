@@ -1,0 +1,326 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8C6DB7E91DA691F2000A754E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6DB7E81DA691F2000A754E /* AppDelegate.swift */; };
+		8C6DB7EB1DA691F2000A754E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6DB7EA1DA691F2000A754E /* ViewController.swift */; };
+		8C6DB7EE1DA691F2000A754E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C6DB7EC1DA691F2000A754E /* Main.storyboard */; };
+		8C6DB7F01DA691F2000A754E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C6DB7EF1DA691F2000A754E /* Assets.xcassets */; };
+		8C6DB7F31DA691F2000A754E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C6DB7F11DA691F2000A754E /* LaunchScreen.storyboard */; };
+		8C6DB7FC1DA6BEDA000A754E /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C6DB7FB1DA6BEDA000A754E /* MessageUI.framework */; };
+		8C6DB7FE1DA6C26A000A754E /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C6DB7FD1DA6C26A000A754E /* Photos.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8C6DB7E51DA691F2000A754E /* SendFmtMail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SendFmtMail.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C6DB7E81DA691F2000A754E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8C6DB7EA1DA691F2000A754E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8C6DB7ED1DA691F2000A754E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8C6DB7EF1DA691F2000A754E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8C6DB7F21DA691F2000A754E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8C6DB7F41DA691F2000A754E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C6DB7FB1DA6BEDA000A754E /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		8C6DB7FD1DA6C26A000A754E /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8C6DB7E21DA691F2000A754E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C6DB7FE1DA6C26A000A754E /* Photos.framework in Frameworks */,
+				8C6DB7FC1DA6BEDA000A754E /* MessageUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8C6DB7DC1DA691F2000A754E = {
+			isa = PBXGroup;
+			children = (
+				8C6DB7E71DA691F2000A754E /* SendFmtMail */,
+				8C6DB7E61DA691F2000A754E /* Products */,
+				8C6DB7FA1DA6BEDA000A754E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8C6DB7E61DA691F2000A754E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C6DB7E51DA691F2000A754E /* SendFmtMail.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8C6DB7E71DA691F2000A754E /* SendFmtMail */ = {
+			isa = PBXGroup;
+			children = (
+				8C6DB7E81DA691F2000A754E /* AppDelegate.swift */,
+				8C6DB7EA1DA691F2000A754E /* ViewController.swift */,
+				8C6DB7EC1DA691F2000A754E /* Main.storyboard */,
+				8C6DB7EF1DA691F2000A754E /* Assets.xcassets */,
+				8C6DB7F11DA691F2000A754E /* LaunchScreen.storyboard */,
+				8C6DB7F41DA691F2000A754E /* Info.plist */,
+			);
+			path = SendFmtMail;
+			sourceTree = "<group>";
+		};
+		8C6DB7FA1DA6BEDA000A754E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C6DB7FD1DA6C26A000A754E /* Photos.framework */,
+				8C6DB7FB1DA6BEDA000A754E /* MessageUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8C6DB7E41DA691F2000A754E /* SendFmtMail */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C6DB7F71DA691F2000A754E /* Build configuration list for PBXNativeTarget "SendFmtMail" */;
+			buildPhases = (
+				8C6DB7E11DA691F2000A754E /* Sources */,
+				8C6DB7E21DA691F2000A754E /* Frameworks */,
+				8C6DB7E31DA691F2000A754E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SendFmtMail;
+			productName = SendFmtMail;
+			productReference = 8C6DB7E51DA691F2000A754E /* SendFmtMail.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8C6DB7DD1DA691F2000A754E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Nori;
+				TargetAttributes = {
+					8C6DB7E41DA691F2000A754E = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = WKC385X5UV;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 8C6DB7E01DA691F2000A754E /* Build configuration list for PBXProject "SendFmtMail" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8C6DB7DC1DA691F2000A754E;
+			productRefGroup = 8C6DB7E61DA691F2000A754E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8C6DB7E41DA691F2000A754E /* SendFmtMail */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8C6DB7E31DA691F2000A754E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C6DB7F31DA691F2000A754E /* LaunchScreen.storyboard in Resources */,
+				8C6DB7F01DA691F2000A754E /* Assets.xcassets in Resources */,
+				8C6DB7EE1DA691F2000A754E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8C6DB7E11DA691F2000A754E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C6DB7EB1DA691F2000A754E /* ViewController.swift in Sources */,
+				8C6DB7E91DA691F2000A754E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8C6DB7EC1DA691F2000A754E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C6DB7ED1DA691F2000A754E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8C6DB7F11DA691F2000A754E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C6DB7F21DA691F2000A754E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8C6DB7F51DA691F2000A754E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8C6DB7F61DA691F2000A754E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8C6DB7F81DA691F2000A754E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WKC385X5UV;
+				INFOPLIST_FILE = SendFmtMail/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SendFmtMail;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		8C6DB7F91DA691F2000A754E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WKC385X5UV;
+				INFOPLIST_FILE = SendFmtMail/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SendFmtMail;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8C6DB7E01DA691F2000A754E /* Build configuration list for PBXProject "SendFmtMail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C6DB7F51DA691F2000A754E /* Debug */,
+				8C6DB7F61DA691F2000A754E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C6DB7F71DA691F2000A754E /* Build configuration list for PBXNativeTarget "SendFmtMail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C6DB7F81DA691F2000A754E /* Debug */,
+				8C6DB7F91DA691F2000A754E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8C6DB7DD1DA691F2000A754E /* Project object */;
+}
